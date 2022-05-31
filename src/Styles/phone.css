@@ -1,0 +1,94 @@
+.phone-display {
+  font-size: 7vw;
+}
+
+.phone-display .title.container {
+  width: 100vw;
+  padding: 1vw;
+  border-bottom: 1px solid black;
+  transition: background-color 1s;
+}
+
+.phone-display .title.container.inactive {
+  background-color: #beefeb;
+}
+
+.phone-display .title.container.active {
+  background-color: #33CCBF;
+}
+
+.phone-display .title .arrow.container {
+  width: 9vw;
+}
+
+.phone-display .title .text {
+  width: 80vw;
+  font-size: 10vw;
+}
+
+.phone-display .item.container {
+  width: 95vw;
+  height: 60vw;
+  margin: auto;
+  margin-top: 5vw;
+  background-color: rgb(208, 240, 248);
+  box-sizing: border-box;
+  padding: 4vw;
+  border-radius: 8vw;
+  box-shadow: 0 0 2vw 0.5vw rgba(139, 140, 142, 0.3);
+  overflow: hidden;
+}
+
+.phone-display .category.active {
+  margin-bottom: 5vw;
+}
+
+.phone-display .item.name {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 3vw;
+  text-decoration: underline;
+  height: 9vw;
+}
+
+.phone-display .item.description {
+  height: 34vw;
+}
+
+.phone-display .item.price {
+  text-align: right;
+}
+
+.phone-display .category .cat-description {
+  text-align: center;
+  margin: 5vw;
+  margin-bottom: 7vw;
+}
+
+.phone-display .banner {
+  width: 100vw;
+  height: 10vw;
+  background-image: url('../Images/Small_Flag_Banner.jpg');
+  background-size: 56vw;
+  background-repeat: repeat;
+  border-bottom: 1px solid black;
+  overflow: hidden;
+}
+
+.phone-display .banner .title {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: fit-content;
+  height: fit-content;
+  border-radius: 3vw;
+  font-size: 9vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.phone-display .header-description {
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
