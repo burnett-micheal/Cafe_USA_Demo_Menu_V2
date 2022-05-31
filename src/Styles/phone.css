@@ -71,9 +71,9 @@
 
 .phone-display .banner {
   width: 100vw;
-  height: 10vw;
+  height: 20vw;
   background-image: url('../Images/Small_Flag_Banner.jpg');
-  background-size: 56vw;
+  background-size: 112vw;
   background-repeat: repeat;
   border-bottom: 1px solid black;
   overflow: hidden;
@@ -85,7 +85,7 @@
   width: fit-content;
   height: fit-content;
   border-radius: 3vw;
-  font-size: 9vw;
+  font-size: 14vw;
   padding-left: 2vw;
   padding-right: 2vw;
 }

@@ -31,9 +31,7 @@ function Category(props) {
       {props.isActive && props.items.map(
         (itemData, index) => (
           <div key={index} className={`item container`}>
-            {/* 20 character upper limit on name - 8vw Font Size */}
             <div className="item name">{itemData.name}</div>
-            {/* 140 character upper limit on desc - 7vw Font Size */}
             <div className="item description">{itemData.description}</div>
             <div className="item price">{itemData.price}</div>
           </div>
