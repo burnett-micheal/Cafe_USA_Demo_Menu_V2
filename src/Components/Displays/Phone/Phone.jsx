@@ -5,16 +5,6 @@ import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 import menuData from "../../../Data/menuData";
 function Category(props) {
 
-  const getItemNameFontSize = (itemName) => {
-    const size = itemName.length > 20 ? `${(20 / (itemName.length)) * 8}vw` : "8vw";
-    return size;
-  }
-  const getItemDescFontSize = (itemDesc) => {
-    if (!itemDesc) return "0vw";
-    const size = itemDesc.length > 120 ? `${(120 / (itemDesc.length)) * 7}vw` : "7vw";
-    return size;
-  }
-
   return (
     <div className={`category ${props.isActive ? "active" : "inactive"}`}>
       <div
@@ -42,9 +32,9 @@ function Category(props) {
         (itemData, index) => (
           <div key={index} className={`item container`}>
             {/* 20 character upper limit on name - 8vw Font Size */}
-            <div className="item name" style={{ fontSize: getItemNameFontSize(itemData.name) }}>{itemData.name}</div>
+            <div className="item name">{itemData.name}</div>
             {/* 140 character upper limit on desc - 7vw Font Size */}
-            <div className="item description" style={{ fontSize: getItemDescFontSize(itemData.description) }}>{itemData.description}</div>
+            <div className="item description">{itemData.description}</div>
             <div className="item price">{itemData.price}</div>
           </div>
         )

@@ -28,7 +28,8 @@
 
 .phone-display .item.container {
   width: 95vw;
-  height: 60vw;
+  min-height: 60vw;
+  height: fit-content;
   margin: auto;
   margin-top: 5vw;
   background-color: rgb(208, 240, 248);
@@ -40,7 +41,8 @@
 }
 
 .phone-display .category.active {
-  margin-bottom: 5vw;
+  padding-bottom: 5vw;
+  border-bottom: 1px solid black;
 }
 
 .phone-display .item.name {
@@ -48,11 +50,13 @@
   font-weight: bold;
   margin-bottom: 3vw;
   text-decoration: underline;
-  height: 9vw;
+  min-height: 9vw;
+  height: fit-content;
 }
 
 .phone-display .item.description {
-  height: 34vw;
+  min-height: 34vw;
+  height: fit-content;
 }
 
 .phone-display .item.price {
