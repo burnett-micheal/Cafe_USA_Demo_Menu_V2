@@ -65,7 +65,10 @@
 
 .phone-display .cat-description {
   text-align: center;
-  margin-bottom: 7vw;
+  margin-top: 3vw;
+  margin-bottom: 11vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
 }
 
 .phone-display .banner {
