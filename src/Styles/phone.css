@@ -63,9 +63,8 @@
   text-align: right;
 }
 
-.phone-display .category .cat-description {
+.phone-display .cat-description {
   text-align: center;
-  margin: 5vw;
   margin-bottom: 7vw;
 }
 
@@ -93,6 +92,13 @@
 .phone-display .header-description {
   text-align: center;
   border-bottom: 1px solid black;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+
+.phone-display .footer-description {
+  text-align: center;
+  border-top: 1px solid black;
   padding-top: 4vw;
   padding-bottom: 4vw;
 }

@@ -23,15 +23,19 @@ function Phone() {
         style={{ paddingTop: "4vw", paddingBottom: "4vw" }}
         autoHeight
         loop
+        touchRatio={1}
       >
         {menuData.categories.map((category, activeIndex) => (
           <SwiperSlide
             key={activeIndex}
           >
-            <div style={{ textAlign: "center", fontSize: "11vw" }}>{category.name}</div>
+            <div style={{ textAlign: "center", fontSize: "11vw", paddingBottom: "3vw" }}>{category.name}</div>
+            <div className="cat-description">
+              {category.description}
+            </div>
             <div>
               {
-                menuData.categories[activeIndex].items.map(
+                category.items.map(
                   (itemData, index) => (
                     <div key={index} className={`item container`}>
                       <div className="item name">{itemData.name}</div>
@@ -45,7 +49,10 @@ function Phone() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+      <div className="footer-description">
+        Swipe for more options
+      </div>
+    </div >
   );
 }
 
